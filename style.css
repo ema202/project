@@ -1,0 +1,92 @@
+body {
+    background-color: #f1f8e9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar { background-color: #2e7d32 !important; }
+.navbar-brand, .nav-link { color: white !important; }
+.nav-link:hover { color: #c8e6c9 !important; transform: translateY(-2px); transition: all 0.2s; }
+
+.hero-section {
+    background: linear-gradient(135deg, #a5d6a7 0%, #c8e6c9 100%);
+    color: #1b5e20;
+    padding: 80px 0;
+    text-align: center;
+}
+.hero-section h1 { font-weight: bold; text-shadow: 1px 1px 2px rgba(0,0,0,0.1); }
+
+.service-card {
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.btn-primary {
+    background-color: #388e3c;
+    border-color: #2e7d32;
+    transition: all 0.2s;
+}
+.btn-primary:hover {
+    background-color: #2e7d32;
+    transform: scale(1.02);
+}
+.table { background-color: white; border-radius: 10px; overflow: hidden; }
+.table thead { background-color: #a5d6a7; color: #1b5e20; }
+
+.carousel-item img { height: 400px; object-fit: cover; transition: transform 0.3s; }
+.counter-section { background-color: #e8f5e9; border-radius: 15px; }
+.counter { font-size: 2.5rem; font-weight: bold; color: #2e7d32; }
+
+.footer-main {
+    background-color: #2e7d32;
+    color: white;
+    padding: 30px 0 20px;
+    margin-top: 50px;
+    border-radius: 30px 30px 0 0;
+}
+.credit-box {
+    background-color: #1b5e20;
+    border-radius: 20px;
+    padding: 15px 10px;
+    margin: 15px auto;
+    max-width: 500px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+.credit-box:hover { transform: scale(1.02); }
+.credit-box i { font-size: 1.3rem; margin-left: 8px; color: #ffd966; }
+.student-name { font-size: 1.2rem; font-weight: bold; }
+.supervisor { font-size: 1rem; margin-top: 8px; }
+
+.footer-links a {
+    color: #ffd966;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.2s;
+}
+.footer-links a:hover { color: white; text-decoration: underline; }
+
+hr { background-color: #c8e6c9; width: 80%; margin: 15px auto; }
+
+/* تأثير الظهور عند التمرير (fade-up) */
+.fade-up {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* تحسين للجوال */
+@media (max-width: 768px) {
+    .carousel-item img { height: 250px; }
+    .hero-section { padding: 50px 0; }
+}
