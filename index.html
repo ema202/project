@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>إدارة الموارد البشرية | HR Hub - حركة وتفاعل</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">HR <span class="text-light">Portal</span></a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="#">الرئيسية</a>
+                <a class="nav-link" href="#services">الخدمات</a>
+                <a class="nav-link" href="#gallery">معرضنا</a>
+                <a class="nav-link" href="#contact">اتصل بنا</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="container">
+            <h1 class="display-4 fw-bold">نستثمر في رأس المال البشرى</h1>
+            <a href="https://www.zenhr.com/ar/home">
+                <button class="btn btn-primary btn-lg mt-3">اكتشف المزيد</button>
+            </a>
+        </div>
+    </header>
+
+    <section id="services" class="container py-5">
+        <h2 class="text-center mb-5" style="color: #2e7d32;">خدماتنا</h2>
+        <div class="row g-4">
+            <div class="col-md-4 fade-up">
+                <div class="card service-card h-100 p-4 text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/912/912318.png" width="60" class="mx-auto mb-3" alt="توظيف">
+                    <h3>التوظيف الذكي</h3>
+                    <p>نساعدك في اختيار أفضل المواهب التي تناسب ثقافة شركتك.</p>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="card service-card h-100 p-4 text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135714.png" width="60" class="mx-auto mb-3" alt="تدريب">
+                    <h3>تدريب وتطوير</h3>
+                    <p>برامج تدريبية مخصصة لرفع كفاءة فريق العمل وتطوير مهاراتهم.</p>
+                </div>
+            </div>
+            <div class="col-md-4 fade-up">
+                <div class="card service-card h-100 p-4 text-center">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3281/3281306.png" width="60" class="mx-auto mb-3" alt="تقييم">
+                    <h3>تقييم الأداء</h3>
+                    <p>أنظمة دقيقة لقياس الإنتاجية وتقديم التغذية الراجعة.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج إضافة موظف -->
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 border p-4 rounded bg-white shadow-sm fade-up">
+                <h3 class="text-center mb-4" style="color: #2e7d32;">إضافة موظف جديد</h3>
+                <form id="addEmployeeForm">
+                    <div class="mb-3">
+                        <label class="form-label">الاسم الكامل</label>
+                        <input type="text" id="employeeName" class="form-control" placeholder="مثال: أحمد محمد" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">تقييم الفترة الأولى</label>
+                        <input type="number" id="employeeScore1" class="form-control" placeholder="من 0 إلى 20" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">تقييم الفترة الثانية</label>
+                        <input type="number" id="employeeScore2" class="form-control" placeholder="من 0 إلى 20" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">حفظ البيانات</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- جدول الموظفين -->
+    <section class="container py-5">
+        <h2 class="text-center mb-4" style="color: #2e7d32;">قائمة الموظفين والتقييمات</h2>
+        <div class="table-responsive fade-up">
+            <table class="table table-bordered text-center" id="employeesTable">
+                <thead>
+                    <tr><th>اسم الموظف</th><th>الفترة الأولى</th><th>الفترة الثانية</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>أحمد السالم</td><td>19</td><td>20</td></tr>
+                    <tr><td>نورة خالد</td><td>17</td><td>19</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- معرض الصور سلايدر -->
+    <section id="gallery" class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" style="color: #2e7d32;">بيئة العمل لدينا</h2>
+            <div id="workCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active"><img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="..."></div>
+                    <div class="carousel-item"><img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="..."></div>
+                    <div class="carousel-item"><img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="..."></div>
+                    <div class="carousel-item"><img src="https://images.unsplash.com/photo-1573164713988-8665fc963095?auto=format&fit=crop&w=1000&q=80" class="d-block w-100" alt="..."></div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon"></span></button>
+                <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next"><span class="carousel-control-next-icon"></span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- عدادات إحصائية متحركة -->
+    <section class="container py-5 counter-section my-5 shadow-sm">
+        <div class="row text-center">
+            <div class="col-md-4 fade-up">
+                <h2 class="counter" data-target="1500">0</h2>
+                <p>موظف تم توظيفه</p>
+            </div>
+            <div class="col-md-4 fade-up">
+                <h2 class="counter" data-target="85">0</h2>
+                <p>شريك نجاح</p>
+            </div>
+            <div class="col-md-4 fade-up">
+                <h2 class="counter" data-target="200">0</h2>
+                <p>دورة تدريبية</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- نموذج التقديم -->
+    <section id="contact" class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 border p-4 rounded bg-white shadow-sm fade-up">
+                <h3 class="text-center mb-4" style="color: #2e7d32;">قدم للوظيفة الآن</h3>
+                <form id="hrForm">
+                    <div class="mb-3"><input type="text" id="name" class="form-control" placeholder="الاسم الكامل"><small class="text-danger" id="nameError"></small></div>
+                    <div class="mb-3"><input type="email" id="email" class="form-control" placeholder="البريد الإلكتروني"><small class="text-danger" id="emailError"></small></div>
+                    <button type="submit" class="btn btn-primary w-100">إرسال الطلب</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-main">
+        <div class="container text-center">
+            <div class="footer-links mb-3">
+                <a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a>
+                <a href="https://www.fifa.com/" target="_blank"><i class="fas fa-futbol"></i> Fifa.com</a>
+                <a href="https://www.uefa.com/" target="_blank"><i class="fas fa-trophy"></i> UEFA.com</a>
+            </div>
+            <hr>
+            <div class="credit-box mx-auto">
+                <div class="student-name"><i class="fas fa-user-graduate"></i> ريناد خليف الخريصي الشمري</div>
+                <div class="supervisor"><i class="fas fa-chalkboard-teacher"></i> تحت إشراف المعلمة أ: أشواق العنزي</div>
+            </div>
+            <p class="small mt-3 opacity-75 mb-0">© 2025 جميع الحقوق محفوظة لقسم الموارد البشرية</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
