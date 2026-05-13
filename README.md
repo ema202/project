@@ -2,10 +2,12 @@
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>إدارة الموارد البشرية | HR Hub</title>
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
         /* التصميم العام والألوان الخضراء الفاتحة */
         body {
@@ -50,10 +52,6 @@
             background-color: #2e7d32;
             border-color: #1b5e20;
         }
-        footer {
-            background-color: #2e7d32;
-            color: white;
-        }
         .table {
             background-color: #ffffff;
             border-radius: 10px;
@@ -76,6 +74,58 @@
             font-weight: bold;
             color: #2e7d32;
         }
+        /* تذييل جديد أنيق */
+        .footer-main {
+            background-color: #2e7d32;
+            color: white;
+            padding: 30px 0 20px;
+            margin-top: 50px;
+            border-radius: 30px 30px 0 0;
+        }
+        .credit-box {
+            background-color: #1b5e20;
+            border-radius: 20px;
+            padding: 15px 10px;
+            margin: 15px auto;
+            max-width: 500px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .credit-box i {
+            font-size: 1.3rem;
+            margin-left: 8px;
+            color: #ffd966;
+        }
+        .credit-box .student-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+        }
+        .credit-box .supervisor {
+            font-size: 1rem;
+            margin-top: 8px;
+        }
+        .footer-links a {
+            color: #ffd966;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        hr {
+            background-color: #c8e6c9;
+            width: 80%;
+            margin: 15px auto;
+        }
+        @media (max-width: 768px) {
+            .carousel-item img {
+                height: 250px;
+            }
+            .hero-section {
+                padding: 50px 0;
+            }
+        }
     </style>
 </head>
 <body>
@@ -93,14 +143,10 @@
         </div>
     </nav>
 
-    <!-- قسم الترحيب (Hero Section) - الترتيب المطلوب -->
+    <!-- قسم الترحيب (Hero Section) بدون الاسم والمشرفة -->
     <header class="hero-section">
         <div class="container">
             <h1 class="display-4 fw-bold">نستثمر في رأس المال البشرى</h1>
-            <!-- أولاً: تحت إشراف المعلمة -->
-            <p class="lead" style="font-size: 1.4rem;">تحت إشراف المعلمة أ: أشواق العنزي</p>
-            <!-- ثانياً: الاسم -->
-            <p class="lead" style="font-size: 1.8rem; font-weight: 500;">ريناد خليف الخريصي الشمري</p>
             <a href="https://www.zenhr.com/ar/home">
                 <button class="btn btn-primary btn-lg mt-3">اكتشف المزيد</button>
             </a>
@@ -248,9 +294,25 @@
         </div>
     </section>
 
-    <!-- تذييل الصفحة -->
-    <footer class="text-center py-4">
-        <p>© 2025 جميع الحقوق محفوظة لقسم الموارد البشرية</p>
+    <!-- ===== تذييل جديد مع اسم الطالبة والمشرفة في نهاية الصفحة ===== -->
+    <footer class="footer-main">
+        <div class="container text-center">
+            <div class="footer-links mb-3">
+                <a href="mailto:info@example.com"><i class="fas fa-envelope"></i> info@example.com</a>
+                <a href="https://www.fifa.com/" target="_blank"><i class="fas fa-futbol"></i> Fifa.com</a>
+                <a href="https://www.uefa.com/" target="_blank"><i class="fas fa-trophy"></i> UEFA.com</a>
+            </div>
+            <hr>
+            <div class="credit-box mx-auto">
+                <div class="student-name">
+                    <i class="fas fa-user-graduate"></i> ريناد خليف الخريصي الشمري
+                </div>
+                <div class="supervisor">
+                    <i class="fas fa-chalkboard-teacher"></i> تحت إشراف المعلمة أ: أشواق العنزي
+                </div>
+            </div>
+            <p class="small mt-3 opacity-75 mb-0">© 2025 جميع الحقوق محفوظة لقسم الموارد البشرية</p>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
